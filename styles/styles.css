@@ -1,0 +1,25 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.alinear-derecha {
+    display: flex;  flex-direction: row; 
+    justify-content: flex-end; 
+}
+
+.colores-navbar {
+    background-image: linear-gradient(to right, #213aa1 , #2557b6, #1177e5);
+}
+
+.colores-footer {
+    background-color: #16171a
+}
+
+.colores-formulario {
+    background-color:  #2557b6;
+}
+
+.bordes{
+    border: 2px solid rgb(0, 0, 0);
+}

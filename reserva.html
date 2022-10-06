@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<HTML lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madryn Duplex</title>
+
+    <!--link css-->
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <!--link fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- inicio navbar -->
+    <nav class="navbar navbar-expand-lg bg-light colores-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Alquiler de Duplex</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse alinear-derecha" id="navbarNav">
+            <ul class="navbar-nav" >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./reserva.html">Reserva</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contactanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- fin navbar -->
+
+    <!--inicio formulario-->
+    <div class="container">
+      <div class="row d-flex justify-content-center m-5"> 
+        <div class="col-md-8 bordes rounded colores-formulario"> 
+          <form action="#" id="formulario">
+
+            <div class="form-group">
+              <label for="fechaI">Seleccione fecha de ingreso:</label>
+              <input type="date" class="form-control" id="fechaI" placeholder="Seleccione fecha de ingreso:" name="fechaI"
+                  value="2022-01-01"
+                  min="2022-01-01" max="2050-12-31">
+            </div>
+
+            <div class="form-group">
+              <label for="fechaE">Seleccione fecha de egreso:</label>
+              <input type="date" class="form-control" id="fechaE" placeholder="Seleccione fecha de egreso:" name="fechaE"
+                  value="2022-01-01"
+                  min="2022-01-01" max="2050-12-31">
+            </div>
+
+            <div class="form-group">
+              <label for="cantpersonas">Ingrese cantidad de personas (maximo 8):</label>
+              <input type="number" class="form-control" id="cantpersonas" placeholder="Ingrese cantidad de personas:" name="cantpersonas"
+                  value=0
+                  min=0 
+                  max=8>
+            </div>
+
+            <div class="form-group">
+              <label for="coddedescuento">Ingrese codigo de descuento:</label>
+              <input class="form-control" id="coddedescuento" placeholder="Ingrese codigo de descuento:" name="coddedescuento">
+            </div>
+
+            <div class="form-group">
+              <label for="nombre">ingrese nombre:</label>
+              <input type="text"  class="form-control" id="nombre" placeholder="ingrese nombre:" name="nombre">
+            </div>
+
+            <div class="form-group">
+              <label for="apellido">Ingrese apellido:</label>
+              <input type="text" class="form-control" id="apellido" placeholder="Ingrese apellido:" name="apellido">
+            </div>
+
+            <div class="form-group">
+              <label for="dni">Ingrese DNI:</label>
+              <input type="number" class="form-control" id="dni" placeholder="Ingrese dni:" name="dni">
+            </div>
+
+            <div class="form-group">
+              <label for="fechanacimiento">Seleccione fecha de nacimiento:</label>
+              <input type="date" class="form-control" id="fechanacimiento" placeholder="Seleccione fecha de nacimiento:" name="fechanacimiento"
+                  value="2000-01-01"
+                  min="1922-01-01" max="2050-12-31">
+            </div>
+
+            <div class="form-group">
+              <label for="numcel">ingrese numero de celular:</label>
+              <input class="form-control" id="numcel" placeholder="ingrese numero de celular:" name="numcel">
+            </div>
+
+            <div class="form-group">
+              <label for="email">ingrese email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Ingrese email:" name="e-mail">
+            </div>
+
+            <input type="submit" id="subir" class="m-3 rounded"/>
+            <input type="reset" class="m-3 rounded"/>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <!--fin formulario-->
+
+    <footer class="container-fluid colores-footer">
+      <div class="row">
+        <div class="p-5 mb-2 bg-secondary">
+        </div>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript"> emailjs.init('tLgZHj3C_TiLFPOW8')</Script>
+  </body>
